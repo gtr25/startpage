@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/search.js"></script>
+    <script src="scripts/load.js"></script>
+    <script src="scripts/clock.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="logo"><img src="icons/fox.svg" /></div>
+        <label id="lblGreetings" onclick="document.location.reload(true)"></label>
+        <div class="search_box">
+
+          <img class="engine" id="engineLogo" src="icons/google.svg" onclick="toggleEngine()" style="cursor:pointer" />
+
+          <div id="gSearch" style="display:block;">
+            <form id="textField" class="google" action="https://google.com/search" method="get">
+              <input class="input_box" type="text" name="q" placeholder="Search with Google">
+            </form>
+          </div>
+
+          <div id="dSearch" style="display:none;">
+            <form class="duck" action="https://duckduckgo.com/" method="get">
+              <input class="input_box" type="text" name="q" placeholder="Search with DuckDuckGo">
+            </form>
+          </div>
+          
+          <img class="sharingan" id="image1" name="image1" src="icons/sharingan-tomoe.png" onclick='toogle(this, ["icons/sharingan-mangekyo.png"]);' />
+
+        </div>
+      </div>
+      <div class="bookmark">
+        <div class="category">
+          <div class="icon"><img src="icons/code.svg" /></div>
+          <div class="bookmarks coding">
+            <li><a class="bm" href="https://github.com/">Github</a></li>
+            <li><a class="bm" href="https://www.w3schools.com/">w3schools</a></li>
+            <li><a class="bm" href="https://leetcode.com/problemset/algorithms/">LeetCode</a></li>
+            <li><a class="bm" href="https://www.hackerrank.com/dashboard">Hackerrank</a></li>
+            <li><a class="bm" href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+            <li><a class="bm" href="https://stackoverflow.com/">Stackoverflow</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="icon"><img src="icons/course.svg" /></div>
+          <div class="bookmarks onlineCourse">
+            <li><a class="bm" href="https://www.codecademy.com/learn">Codecademy</a></li>
+            <li><a class="bm" href="https://www.coursera.org/in">Coursera</a></li>
+            <li><a class="bm" href="https://www.sololearn.com/">Sololearn</a></li>
+            <li><a class="bm" href="https://fullstackopen.com/en/">Fullstack</a></li>
+            <li><a class="bm" href="https://www.netacad.com/portal/learning">NetAcad</a></li>
+            <li><a class="bm" href="https://scrimba.com/dashboard">Scrimba</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="icon"><img src="icons/google.svg" /></div>
+          <div class="bookmarks googleWorkspace">
+            <li><a class="bm" href="https://www.google.com/">Google</a></li>
+            <li><a class="bm" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a class="bm" href="https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox">Gmail</a></li>
+            <li><a class="bm" href="https://drive.google.com/drive/my-drive">Drive</a></li>
+            <li><a class="bm" href="https://meet.google.com/">Meet</a></li>
+            <li><a class="bm" href="https://scholar.google.com/">Scholar</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="icon"><img src="icons/like.svg" /></div>
+          <div class="bookmarks socialMedia">
+            <li><a class="bm" href="https://www.reddit.com/">Reddit</a></li>
+            <li><a class="bm" href="https://twitter.com/home">Twitter</a></li>
+            <li><a class="bm" href="https://www.facebook.com/">Facebook</a></li>
+            <li><a class="bm" href="https://instagram.com/">Instagram</a></li>
+            <li><a class="bm" href="https://www.linkedin.com/feed/">LinkedIn</a></li>
+            <li><a class="bm" href="https://web.whatsapp.com/">WhatsApp</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="icon"><img src="icons/other.svg" /></div>
+          <div class="bookmarks other">
+            <li><a class="bm" href="https://www.amazon.in/">Amazon</a></li>
+            <li><a class="bm" href="https://www.flipkart.com/">Flipkart</a></li>
+            <li><a class="bm" href="https://outlook.live.com/mail/0/inbox">Outlook</a></li>
+            <li><a class="bm" href="https://wiki.archlinux.org/">Arch Wiki</a></li>
+            <li><a class="bm" href="https://thehackernews.com/">Hacker News</a></li>
+            <li><a class="bm" href="https://monkeytype.com/">Monkey Type</a></li>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+  
+</html>
